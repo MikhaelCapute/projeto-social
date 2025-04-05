@@ -44,13 +44,18 @@ iframe#tela{
     height: 467px;
 }
 
+#tela::-webkit-scrollbar{
+    width: 0px; /* Largura da barra de rolagem */
+    height: 0px; /* Cor de fundo da barra de rolagem */
+}
+
 section#redes-sociais{
     text-align: left; /* Passando ob botões para o lado direito da tela */
 }
 
 section#redes-sociais img{
     width: 50px;
-    margin: 20px;
+    margin: 20px 10px;
     border-radius: 50%; /* Deixa os botões redondos */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.417); /* Sombra */
 }
