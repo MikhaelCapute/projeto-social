@@ -43,3 +43,40 @@ iframe#tela{
     width: 263px;
     height: 467px;
 }
+
+section#redes-sociais{
+    text-align: left; /* Passando ob botões para o lado direito da tela */
+}
+
+section#redes-sociais img{
+    width: 50px;
+    margin: 20px;
+    border-radius: 50%; /* Deixa os botões redondos */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.417); /* Sombra */
+}
+
+section#redes-sociais img:hover{
+    cursor: pointer; /* Muda o cursor para a mãozinha */
+
+    transform: scale(1.2); /* Aumenta o tamanho do botão */
+
+    transition: all 0.75s ease, border 2s; /* Faz a transição suave all significa que aplica isso em todas as propriedades que forem alteradas 0.3 é o tempo que dura e ease é pra começar devagar e ir acelerando a animação conforme o tempo*/
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.558); /* Sombra */
+
+    border: 3px solid rgb(255, 255, 255); /* Borda branca */
+     /* Tempo de aparecimento da borda */
+
+
+}
+
+section#redes-sociais img:not(:hover) {
+    transition-duration: 1s; /* Tempo de volta para o padrão */
+    transition-property: all; /* definindo para todas as propriedades */
+    transition-timing-function: ease; /* Inicia devagar depois termina rápido */
+    opacity: 0.9; /* Opacidade padrão */
+    border: 1px solid rgba(0, 0, 0, 0); /* Borda invisivel para voltar ao normal com animação (gambiarra) */
+}
+
+
+
