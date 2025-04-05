@@ -1,5 +1,45 @@
 @charset "UTF-8";
 
-body{
+*{
+    margin: 0px;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body{
+    background: url('../images/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover; /* Faz com que a imagem de fundo seja redimensionada para cobrir o elemento mesmo que precise ser cortada  */ 
+    background-attachment: fixed; /* A imagem é fixada na tela, ao rolar a página o fundo permanece no mesmo lugar mesmo que role a tela ela continuará no lugar configurado */
+}
+
+main{
+    position: relative; /*  */ 
+    height: 100vh;
+    
+}
+
+section#telefone{
+    position: absolute;
+    top: 50%; /* distanciando em 50% do topo da tela */
+    left: 50%; /* distanciando em 50% da esquerda da tela */
+    transform: translate(-50%, -50%); /* menos metade para a esquerda, menos metade para o topo, isso centraliza o bloco */
+
+    height: 627px;
+    width: 311px;
+    background: url('../images/frame-iphone.png') no-repeat;
+    
+}
+
+iframe#tela{
+    position: relative;
+    top: 82px;
+    left: 24px;
+    width: 263px;
+    height: 467px;
 }
