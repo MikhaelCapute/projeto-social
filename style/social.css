@@ -26,3 +26,13 @@ a{
     text-decoration: none;
     
 }
+
+a:hover{
+    transition: 0.5s;
+    background-color: darkgreen;
+    font-size: 1.05em;
+}
+
+a:not(:hover){
+    transition: 0.5s;
+}
